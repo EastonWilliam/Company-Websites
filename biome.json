@@ -1,0 +1,17 @@
+{
+	"files": {
+		"includes": ["**/*.{jsx,ts,tsx}"],
+		"experimentalScannerIgnores": ["node_modules", ".next"]
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true
+	}
+}
