@@ -31,27 +31,10 @@ export const FeedSectionContent = () => {
 	return (
 		<div className="w-full my-16">
 			{/* Header */}
-			<div className="flex flex-col lg:flex-row items-center justify-between mb-10 gap-6">
+			<div className="flex flex-col lg:flex-row items-center justify-center mb-10 gap-6">
 				<h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-black font-['Revalia'] text-center lg:text-left">
 					Feedback
 				</h2>
-
-				{/* <Link
-                    href={ROUTES.FEEDBACK}
-                    className="
-                        bg-primary hover:bg-primary
-                        text-white
-                        rounded-xl
-                        px-6 lg:px-16
-                        py-3 lg:py-4
-                        text-lg lg:text-2xl
-                        transition-all duration-300
-                        hover:scale-105
-                        text-center
-                    "
-                >
-                    See All Feedback
-                </Link> */}
 			</div>
 
 			{/* Carousel */}
@@ -59,28 +42,15 @@ export const FeedSectionContent = () => {
 				{/* Left Arrow */}
 				<button
 					onClick={handlePrev}
-					className="
-                        bg-primary
-                        shadow-lg
-                        rounded-2xl
-                        w-15 h-15 md:w-15 md:h-15 lg:w-20 lg:h-20
-                        flex items-center justify-center
-                        transition hover:scale-105
-                        text-black
-                        text-[28px] 
-                        md:text-[32px] 
-                        lg:text-[48px]
-                        cursor-pointer
-                    "
+					className="bg-primary shadow-lg rounded-2xl w-15 h-15 md:w-15 md:h-15 lg:w-20 lg:h-20 flex items-center justify-center transition hover:scale-105 text-black text-[28px]  md:text-[32px]  lg:text-[48px] cursor-pointer"
 				>
 					{"<"}
 				</button>
 
 				{/* Card with fade animation */}
 				<div
-					className={`transition-all duration-300 ${
-						animate ? "opacity-0 translate-y-3" : "opacity-100 translate-y-0"
-					} w-full flex justify-center`}
+					className={`transition-all duration-300 ${animate ? "opacity-0 translate-y-3" : "opacity-100 translate-y-0"
+						} w-full flex justify-center`}
 				>
 					<PersonalCard name={name} bioTitle={bioTitle} bio={bio} img={img} />
 				</div>
@@ -88,19 +58,7 @@ export const FeedSectionContent = () => {
 				{/* Right Arrow */}
 				<button
 					onClick={handleNext}
-					className="
-                        bg-primary
-                        shadow-lg
-                        rounded-2xl
-                        w-15 h-15 md:w-15 md:h-15 lg:w-20 lg:h-20
-                        flex items-center justify-center
-                        transition hover:scale-105
-                        text-black
-                        text-[28px] 
-                        md:text-[32px] 
-                        lg:text-[48px]
-                        cursor-pointer
-                    "
+					className="bg-primary shadow-lg rounded-2xl w-15 h-15 md:w-15 md:h-15 lg:w-20 lg:h-20 flex items-center justify-center transition hover:scale-105 text-black text-[28px]  md:text-[32px]  lg:text-[48px] cursor-pointer"
 				>
 					{">"}
 				</button>
@@ -111,9 +69,8 @@ export const FeedSectionContent = () => {
 				{users.map((_, i) => (
 					<div
 						key={i}
-						className={`h-3 w-3 rounded-full transition-all duration-300 ${
-							i === index ? "bg-primary w-6" : "bg-gray-400"
-						}`}
+						className={`h-3 w-3 rounded-full transition-all duration-300 ${i === index ? "bg-primary w-6" : "bg-gray-400"
+							}`}
 					/>
 				))}
 			</div>

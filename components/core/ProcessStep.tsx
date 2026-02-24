@@ -40,13 +40,13 @@ export const ProcessStep = ({ step, isEven, stepRef }: ProcessStepProps) => {
 				className={`w-full md:w-[45%] flex flex-col gap-4 
                     ${isEven ? "md:order-2" : "md:order-1"} order-1`}
 			>
-				<h4 className="uppercase font-['Revalia'] text-[32px] md:text-[48px] text-white">
+				<h4 className={`uppercase font-['Revalia'] text-[32px] md:text-[48px] ${isEven ? "text-white" : "text-primary"}`}>
 					{step.id}. {step.title}
 				</h4>
 				<p className="font-['Inter'] text-[18px] md:text-[24px] text-white/65">
 					{step.description}
 				</p>
 			</div>
-		</div>
+		</div >
 	);
 };

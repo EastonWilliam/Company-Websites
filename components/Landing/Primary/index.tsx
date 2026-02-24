@@ -39,7 +39,7 @@ export default function PrimarySection() {
 			</div>
 
 			{/* Content */}
-			<div className="relative h-[50vh] sm:h-[80vh] lg:h-[120vh] py-20 max-w-7xl mx-auto px-6">
+			<div className="relative h-[50vh] sm:h-[80vh] lg:h-[120vh] py-18 max-w-7xl mx-auto px-6">
 				<PrimarySectionContent onSelect={setRotation} />
 			</div>
 		</div>

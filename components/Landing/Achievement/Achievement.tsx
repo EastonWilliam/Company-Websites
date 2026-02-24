@@ -19,7 +19,7 @@ export const Achievement = () => {
 			<div className="absolute inset-0"></div>
 
 			<div className="relative w-full flex flex-col items-center gap-12 mt-[300px] px-8 ">
-				{/* Rectangle Container with Stroke Line */}
+	
 				<div
 					className="relative max-w-[1440px] w-full lg:h-[314px] h-[fit-content] px-8 py-6
                      border-2 border-dashed border-primary rounded-xl flex flex-col items-center"

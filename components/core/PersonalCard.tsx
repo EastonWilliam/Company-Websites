@@ -47,7 +47,7 @@ export const PersonalCard: React.FC<PersonalCardProps> = React.memo(
 
 							<div className="relative w-[90%] h-[90%] lg:w-[100%] aspect-square">
 								<Image
-									src={img} // e.g., "/assets/images/user01.png"
+									src={img}
 									alt={name}
 									fill
 									className="object-contain"
@@ -62,11 +62,11 @@ export const PersonalCard: React.FC<PersonalCardProps> = React.memo(
 							{name}
 						</h3>
 
-						<p className="font-bold text-black text-[24px] md:text-[32px] lg:text-[40px]">
+						<p className="font-bold text-black text-[24px] md:text-[32px] lg:text-[40px] font-['Poppins']">
 							{bioTitle}
 						</p>
 
-						<p className="font-bold text-black text-[14px] md:text-[16px] lg:text-[20px]">
+						<p className="font-bold text-black text-[14px] md:text-[16px] lg:text-[20px] font-['Poppins]">
 							{bio}
 						</p>
 					</div>
