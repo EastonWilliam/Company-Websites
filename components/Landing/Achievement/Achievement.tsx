@@ -46,8 +46,7 @@ export const Achievement = () => {
 									backgroundRepeat: "no-repeat",
 								}}
 							>
-								<div
-									className="text-[60px] sm:text-4xl font-bold mb-2 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent"
+								<div className="text-[60px] sm:text-4xl font-bold mb-2 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent"
 								>
 									{achievement.value}
 								</div>
