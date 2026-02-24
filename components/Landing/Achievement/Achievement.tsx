@@ -19,20 +19,18 @@ export const Achievement = () => {
 			<div className="absolute inset-0"></div>
 
 			<div className="relative w-full flex flex-col items-center gap-12 mt-[300px] px-8 ">
-	
 				<div
 					className="relative max-w-[1440px] w-full lg:h-[314px] h-[fit-content] px-8 py-6
                      border-2 border-dashed border-primary rounded-xl flex flex-col items-center"
 				>
-					{/* Centered Title on Rectangle */}
+
 					<div className="relative w-max mx-auto -top-17">
-						{/* BACKGROUND — optional color behind Achievement button */}
+
 						<div
 							className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
                             w-[102%] h-15 bg-primary rounded-xl opacity-30"
 						></div>
 
-						{/* FRONT — the Achievement button stays centered */}
 						<h2
 							className={`relative px-8 py-6 text-4xl font-bold
                             bg-secondary text-white border border-[#FFFFFF0D] rounded-xl ${revalia.className}`}
