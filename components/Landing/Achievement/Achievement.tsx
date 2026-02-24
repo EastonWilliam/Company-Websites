@@ -23,14 +23,11 @@ export const Achievement = () => {
 					className="relative max-w-[1440px] w-full lg:h-[314px] h-[fit-content] px-8 py-6
                      border-2 border-dashed border-primary rounded-xl flex flex-col items-center"
 				>
-
 					<div className="relative w-max mx-auto -top-17">
-
 						<div
 							className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
                             w-[102%] h-15 bg-primary rounded-xl opacity-30"
 						></div>
-
 						<h2
 							className={`relative px-8 py-6 text-4xl font-bold
                             bg-secondary text-white border border-[#FFFFFF0D] rounded-xl ${revalia.className}`}
@@ -38,23 +35,19 @@ export const Achievement = () => {
 							Achievement
 						</h2>
 					</div>
-
-					{/* Cards */}
 					<div className="grid grid-cols-1 lg:grid-cols-4 gap-10 text-center justify-end items-center h-full mt-[-100px] sm:mt-[-50px]">
 						{achievements.map((achievement, index) => (
 							<div
 								key={index}
-								className="rounded-xl hover:shadow-lg transition duration-300 flex flex-col items-center justify-center
-             p-6 w-full sm:w-64"
+								className="rounded-xl hover:shadow-lg transition duration-300 flex flex-col items-center justify-center p-6 w-full sm:w-64"
 								style={{
 									backgroundImage: "url(/assets/images/card-border.png)",
-									backgroundSize: "100% 100%", // fill the card size exactly
+									backgroundSize: "100% 100%",
 									backgroundRepeat: "no-repeat",
 								}}
 							>
 								<div
-									className="text-[60px] sm:text-4xl font-bold mb-2
-                  bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent"
+									className="text-[60px] sm:text-4xl font-bold mb-2 bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent"
 								>
 									{achievement.value}
 								</div>
